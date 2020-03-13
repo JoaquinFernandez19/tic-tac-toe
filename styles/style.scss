@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Oswald;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 16px;
+	background-color: rgba(255, 255, 255, 0.657);
+	justify-content: space-around;
+	position: relative;
+}
+.title {
+	margin-top: 5vh;
+	padding: 0 2em 0 2em;
+	text-align: center;
+	color: rgb(20, 244, 0);
+	background-color: rgba(0, 0, 0, 0.801);
+	border: 0.5em solid rgb(39, 250, 1);
+	&__h1 {
+		font-size: 4em;
+	}
+}
+
+.game-btns {
+	width: 25em;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	& button {
+		font-size: 2em;
+		cursor: pointer;
+		border: none;
+		outline: none;
+		font-weight: 900;
+		background-color: rgba(25, 139, 14, 0.3);
+		padding: 0.5em 1em;
+	}
+	& button:hover {
+		background-color: rgba(121, 250, 109, 1);
+		border: 2px dashed rgb(18, 29, 1);
+	}
+}
+.game-container {
+	margin: 5rem;
+	width: 25em;
+	height: 20em;
+
+	// parte importante
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	&__box {
+		background-color: rgb(3, 41, 6);
+		border: 0.09em solid rgb(253, 250, 250);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 3em;
+		font-weight: bold;
+		color: rgb(75, 246, 1);
+	}
+}
