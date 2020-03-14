@@ -37,7 +37,7 @@ const gameBoard = (function() {
 			gameEngine.winnerCheckerX();
 			gameEngine.winnerCheckerO();
 		}
-		message.textContent = `It's ${turn}'s turn!`;
+		message.textContent = `It's ${turn} turn!`;
 	}
 	//public return
 	return {
